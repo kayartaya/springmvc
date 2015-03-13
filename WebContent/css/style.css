@@ -1,0 +1,12 @@
+.err {
+	color: red;
+	font-style: italic;
+}
+
+#container {
+	min-height: 400px;
+}
+#footer {
+	text-align: center;
+	font-style: italic;
+}

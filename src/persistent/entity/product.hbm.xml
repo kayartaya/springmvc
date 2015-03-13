@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="persistent.entity">
+	<class name="Product" table="products">
+		<id name="productId" column="product_id" >
+			<generator class="increment" />
+		</id>
+		<property name="productName" column="product_name" />
+		<property name="supplierId" column="supplier_id" />
+		<property name="categoryId" column="category_id" />
+		<property name="quantityPerUnit" column="quantity_per_unit" />
+		<property name="unitPrice" column="unit_price" />
+		<property name="unitsInStock" column="units_in_stock" />
+		<property name="unitsOnOrder" column="units_on_order" />
+		<property name="reorderLevel" column="reorder_level" />
+		<property name="discontinued" />
+	</class>
+</hibernate-mapping>
